@@ -32,13 +32,13 @@ Tiny Website for add/remove album of Spotify, Using api rest of spotify and Reac
 
 ### Built With
 
+* [![Node][Node.js]][Node-url]
 * [![React][React.js]][React-url]
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
