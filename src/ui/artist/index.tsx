@@ -22,7 +22,7 @@ function Artist() {
           }
       }).catch((error) => {
           if (error.response) {
-            if(error.response.status == 401){
+            if(error.response.status === 401){
               localStorage.removeItem("token");
               navigate("/");
             }
@@ -47,13 +47,13 @@ function Artist() {
 
   useEffect(() => {
     setArtists(state?.album);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if(artists?.id){
       getAlbumes()
     }
-  }, [artists]);
+  }, [artists]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const addAlbum = async (id:string) => {
     let t = await getData("token");
@@ -69,7 +69,7 @@ function Artist() {
         }
       }).catch((error) => {
           if (error.response) {
-            if(error.response.status == 401){
+            if(error.response.status === 401){
               localStorage.removeItem("token");
               navigate("/");
             }

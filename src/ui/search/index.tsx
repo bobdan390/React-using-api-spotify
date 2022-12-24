@@ -26,12 +26,12 @@ function Search() {
                 Authorization: `Bearer ${t}`
             },
             params: {
-                q: searchKey == "" ? "a" : searchKey,
+                q: searchKey === "" ? "a" : searchKey,
                 type: "artist"
             }
         }).catch((error) => {
             if (error.response) {
-              if(error.response.status == 401){
+              if(error.response.status === 401){
                 localStorage.removeItem("token");
                 navigate("/");
               }
@@ -60,7 +60,7 @@ function Search() {
 
     useEffect(() => {
         searchArtists();
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const redirectArtist = (artist: any) => {
         setAlbum(artist);

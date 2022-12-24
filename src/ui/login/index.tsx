@@ -17,10 +17,10 @@ function Login() {
             setToken(_token);
             navigate("/search");
         }
-        if(token!="" && token!=null){
+        if(token!=="" && token!==null){
             navigate("/search");
         }
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
 
     return (
