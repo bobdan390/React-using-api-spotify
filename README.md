@@ -56,15 +56,16 @@ _Below is an example of how you can instruct your audience on installing and set
 1. Create a App at [https://developer.spotify.com/](https://developer.spotify.com/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/bobdan390/daniel_barrios_full-stack.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your CLIENT_ID and REDIRECT_URI in `.env`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   REACT_APP_CLIENT_ID = 'ENTER YOUR CLIENT_ID';
+   REACT_APP_REDIRECT_URI = 'ENTER YOUR REDIRECT_URI';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
