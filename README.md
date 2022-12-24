@@ -33,7 +33,7 @@ Tiny Website for add/remove album of Spotify, Using api rest of spotify and Reac
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Tailwind][tailwindcss.com]][Bootstrap-url]
+* [![Tailwindcss][Tailwindcss.com]][Tailwindcss-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
