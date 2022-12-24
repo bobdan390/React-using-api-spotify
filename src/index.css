@@ -1,13 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.css";
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.colorSecondary {
+  color: var(--secondary-color);
 }
+
+.bgSecondary {
+  background-color: var(--secondary-color);
+}
+
+.bgRed {
+  background-color: var(--red-color);
+}
+
+@media (min-width: 1400px) {
+  .container {
+      max-width: 1400px;
+  }
+}
+
+.cardContainer {
+  color: var(--white-color);
+}
+.cardContainer:hover {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
