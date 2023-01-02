@@ -20,7 +20,7 @@ function Login() {
             //navigate("/search");
             
             //work in netlify
-            window.reload();
+            window.location.reload();
         }
         if(token!=="" && token!==null){
             navigate("/search");
