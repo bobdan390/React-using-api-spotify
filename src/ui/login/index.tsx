@@ -15,7 +15,12 @@ function Login() {
             window.location.hash = "";
             setData("token", _token);
             setToken(_token);
-            navigate("/search");
+            
+            //not work in netlify
+            //navigate("/search");
+            
+            //work in netlify
+            window.reload();
         }
         if(token!=="" && token!==null){
             navigate("/search");
